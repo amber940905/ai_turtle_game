@@ -45,7 +45,7 @@ try:
     # 🌟 防禦核心：使用 system_instruction 注入最高防禦天條，並明確指定 models/gemini-1.5-flash
     # 規格書限制不能用後端程式過濾 AI 回傳，所以必須把防禦寫進模型的系統靈魂裡
     model = genai.GenerativeModel(
-        model_name="gemini-2.5-flash",  # 👈 直接升級到 2.5 世代
+        model_name="gemini-3.1-flash-lite",  # 👈 直接升級到 2.5 世代
         system_instruction=(
             # ... 後續的提示詞保持不變 ...
             "【惡意攻擊判定基準】\n"
